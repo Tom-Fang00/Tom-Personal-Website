@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <h2>All Work Done By Tom Fang for the Purpose of WebTech Class</h2>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <div>
+          <label for="input-last-name">Last Name:</label>
+          <input
+            type="text"
+            placeholder="Last Name"
+            size="30"
+            id="last-name"
+            name="Last Name"
+          />
+        </div>
+        <div>
+          <label for="input-first-name">First Name:</label>
+          <input
+            type="text"
+            placeholder="First Name"
+            size="30"
+            id="first-name"
+            name="First Name"
+          />
+        </div>
+        <div>
+          <label for="input-email">Email:</label>
+          <input
+            type="text"
+            placeholder="Email"
+            size="30"
+            id="Email"
+            name="Email"
+          />
+        </div>
+        <div>
+          Gender:
+          <label><input type="radio" name="gender" value="Male" />Male </label>
+          <label
+            ><input type="radio" name="gender" value="Female" />Female
+          </label>
+        </div>
+        <div>
+          Leave a comment:
+          <br />
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+              Enter text here...</textarea
+          >
+        </div>
+        
+        <button type="submit"><img src="image/mailbox.png" width="25"></button>
+        <button type="reset"><img src="image/reset.png" width="25"></button>
+      </form>
+</body>
+</html>

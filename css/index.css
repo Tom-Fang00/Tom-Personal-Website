@@ -80,6 +80,7 @@
     display:grid;
     justify-items: center;
     align-items: center;
+    padding:10px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 30% 30% 30%;
     grid-template-areas:
@@ -108,4 +109,8 @@
 }
 img{
     width:600px;
+}
+footer{
+    display:block;
+    text-align: right;;
 }
