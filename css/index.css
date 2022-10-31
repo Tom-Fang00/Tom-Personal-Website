@@ -1,0 +1,111 @@
+.menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 40px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menubar li a {
+    padding: 20px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#nav-name{
+    font-family: cursive;
+    font-size: 1.7em;
+}
+
+.intro {
+    height: 820px;
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/015/373/703/large/thao-vo-cam-8.jpg?1548096806);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.intro h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.intro header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.restaurant{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+    "first opening-time"
+    "second contact-address"
+}
+.first{
+    grid-area: first;
+    font-size: 1.8em;
+
+}
+.second{
+    grid-area: second;
+    text-align:center;
+    font-size: 1.3em;
+}
+.opening-time{
+    grid-area: opening-time;
+}
+.contact-address{
+    grid-area: contact-address;
+}
+
+.opening-time,
+.contact-adress {
+    font-size: 1.2em;
+}
+.gallery{
+    display:grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas:
+    "g1 g2"
+    "g3 g4"
+    "g5 g6"
+    
+}
+#g1{
+    grid-area:g1;
+}
+#g2{
+    grid-area:g2;
+}
+#g3{
+    grid-area:g3;
+}
+#g4{
+    grid-area:g4;
+}
+#g5{
+    grid-area:g5;
+}
+#g6{
+    grid-area:g6;
+}
+img{
+    width:600px;
+}
