@@ -26,8 +26,15 @@
           <li>
             <a href="reservation.html">Reservation</a>
           </li>
+          <li>
+            <button id="dark">DARK</button>
+          </li>
+          <li>
+            <button id="light">LIGHT</button>
+          </li>
         </ul>
       </nav>
+      <div id="intro">
       <section class="intro">
         <header>
           <h1>First Zen Dining Experience</h1>
@@ -73,18 +80,33 @@
       <br>
       <section class="gallery"> 
         <div id="g1">
-            <img src="image/gallery1.jpg" alt="g1" />
+            <img src="image/gallery1.jpg" alt="g1" title="restaurant-image"/>
         </div>
-        <div id="g2"><img src="image/gallery2.jpg" alt="g2" /> </div>
-        <div id="g3"><img src="image/gallery3.jpg" alt="g3" /> </div>
-        <div id="g4"><img src="image/gallery4.jpg" alt="g4" /> </div>
-        <div id="g5"><img src="image/gallery5.jpg" alt="g5" /> </div>
-        <div id="g6"><img src="image/gallery6.jpg" alt="g6" /> </div>
+        <div id="g2"><img src="image/gallery2.jpg" alt="g2" title="restaurant-image"/> </div>
+        <div id="g3"><img src="image/gallery3.jpg" alt="g3" title="restaurant-image"/> </div>
+        <div id="g4"><img src="image/gallery4.jpg" alt="g4" title="restaurant-image"/> </div>
+        <div id="g5"><img src="image/gallery5.jpg" alt="g5" title="restaurant-image"/> </div>
+        <div id="g6"><img src="image/gallery6.jpg" alt="g6" title="restaurant-image"/> </div>
       </section>
       <footer>
         <p>By Tom F</p>
         <p><a href="contact.html">Contact</a></p>
       </footer>
+    </div>
+      <script>
+        function dark() {
+        document.getElementById("intro").style.backgroundColor = "grey";
+      }
+      function light() {
+        document.getElementById("intro").style.backgroundColor = "white";
+      }
+      document.getElementById("dark").onclick = function () {
+        dark();
+      };
+      document.getElementById("light").onclick = function () {
+        light();
+      };
+      </script>
 
 </body>
 </html>
